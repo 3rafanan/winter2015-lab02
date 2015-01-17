@@ -33,7 +33,7 @@ class Application extends CI_Controller {
      // Message: Undefined property: About::$parser
      //
      // Filename: core/MY_Controller.php
-    $this->load->library('parser');
+    //$this->load->library('parser'); // Commented- out and autoloaded parser library in autoload.php
 
     $this->data['menubar'] = build_menu_bar($this->choices);
 	$this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
